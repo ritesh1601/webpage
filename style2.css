@@ -27,7 +27,7 @@ input:focus {
 }
 .left_top_div{
     display: flex;
-    justify-content:space-evenly;
+    /* justify-content:space-evenly; */
     align-items: center;
 
 }
@@ -286,6 +286,11 @@ left: 206px;
     aspect-ratio: 3/2;
     object-fit: contain;
     mix-blend-mode: color-burn;
+    height: 90px;
+    width: 100px;
+    filter:brightness(150%);
+    margin-left: 20px;
+    margin-right: -60px;
 }
 .slider{
     height: 300px;
@@ -398,13 +403,20 @@ margin-right: 12px;
     color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;  
 }
-.Creator{
+.footer{
     width: 100%;
-    background-color: #0c1018f0;
-    height: 465px;
-    text-align: center;
+    height: 200px;
+    background-color: #090d18;
     position: absolute;
-    bottom: -1549px;
+    bottom: -1284px;
+    vertical-align: middle;
+}
+.help{
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    font-size: 22px;
 }
 
 

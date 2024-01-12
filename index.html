@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybernauts webpage login</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="main.js">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header pos1" style="width:98.97%">
        <div class="left_top_div">
+        <img src="spider-logo.png" class="logo" >
         <a href="#cy" class="anchor_link">Cybernauts</a>
         <a href="#Seniors" class="anchor_link">Seniors</a>
-        <a href="#Creators" class="anchor_link">Creator</a>
+        <!-- <a href="#Creators" class="anchor_link">Creator</a> -->
         <a href="#Help" class="anchor_link">Help</a>
 
        </div>
@@ -36,22 +38,23 @@
 
     <div class="ritesh">
         <div class="heading"><p>Begin Your dream Now</p></div>
-
+<form id="contactForm">
         <div class="data"><p style="font-size: 21px;">Name</p><input class="inputtab" style="position: relative;
-        left: 32px;" id="Name" required="required"></div>
+        left: 32px;" id="name" required="required"></div>
 
         <div class="data"><p style="font-size: 21px;">Username</p><input style="position: relative;
-            left: 19px;" class="inputtab" id="Username" required="required"></div>
+            left: 19px;" class="inputtab" id="username" required="required"></div>
 
         <div class="data"><p style="font-size: 21px;">Gmail</p><input style="position: relative;
-            left: 32px;" type="email" class="inputtab" id="Gmail" required="required"></div>
+            left: 32px;" type="email" class="inputtab" id="gmail" required="required"></div>
 
         <div class="data"><p style="font-size: 21px;">Password</p><input style="position: relative; left: 25px;" type="password" class="inputtab" id="password"  placeholder="Enter your password" required="required"></div>
 
-        <div class="data"><p style="font-size: 21px;">Confirm Password</p><input type="password" class="inputtab" id="password" required="required"></div>
-
+        <div class="data"><p style="font-size: 21px;">Confirm Password</p><input type="password" class="inputtab" id="confirmPassword" required="required"></div>
+<p id="message"></p>
         <input type="submit" class="submit" name="subscribe" 
-        value="Register"/>
+        value="Register" onclick="checkPassword()"/>
+    </form>
     </div>
 
 
@@ -173,15 +176,28 @@
     },5000);
 </script>
 
+<script>
+    function checkPassword() {
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+        var message = document.getElementById('message');
 
-<div class="Creator">
-<div class="cydiv1" style="text-shadow: 0.5px 0.5px 5px #4f4ff6;">
-    <p class="text" id="#Creators" ><h1>Creator</h1></p>
-</div>
-
-</div>
-
-
+        if (password === confirmPassword) {
+            message.innerHTML = 'Password Matched!';
+            message.style.color = 'green';
+        } else {
+            message.innerHTML = 'Password does not match!';
+            message.style.color = 'red';
+        }
+    }
+</script>
+<footer class="footer">
+    <div class="help">
+        <p id="Help"><h3>Help</h3></p>
+        <p>+918191944230</p>
+        <p>riteshsaini1601@gmail.com</p>
+    </div>
+</footer>
 
     
 </body>
