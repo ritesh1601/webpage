@@ -418,3 +418,16 @@ margin-right: 12px;
     left: 100px;
     font-size: 22px;
 }
+@media screen and (max-width:1300px) {
+    .position1300{
+        position: relative;
+        left: 727px;
+        top: -861px;
+    }
+    .shp1300{
+        position: relative;
+        left: 94px;
+        top: -666px;
+    }
+  
+}
