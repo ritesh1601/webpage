@@ -38,21 +38,21 @@
 
     <div class="ritesh">
         <div class="heading"><p>Begin Your dream Now</p></div>
-<form id="contactForm">
+<form id="contactForm" method="post">
         <div class="data"><p style="font-size: 21px;">Name</p><input class="inputtab" style="position: relative;
-        left: 32px;" id="name" required="required"></div>
+        left: 32px;" id="name" required="required" name="Name"></div>
 
         <div class="data"><p style="font-size: 21px;">Username</p><input style="position: relative;
-            left: 19px;" class="inputtab" id="username" required="required"></div>
+            left: 19px;" class="inputtab" id="username" required="required" name="Username"></div>
 
         <div class="data"><p style="font-size: 21px;">Gmail</p><input style="position: relative;
-            left: 32px;" type="email" class="inputtab" id="gmail" required="required"></div>
+            left: 32px;" type="email" class="inputtab" id="gmail" required="required" name="Gmail"></div>
 
-        <div class="data"><p style="font-size: 21px;">Password</p><input style="position: relative; left: 25px;" type="password" class="inputtab" id="password"  placeholder="Enter your password" required="required"></div>
+        <div class="data"><p style="font-size: 21px;">Password</p><input style="position: relative; left: 25px;" name="Password" type="password" class="inputtab" id="password"  placeholder="Enter your password" required="required"></div>
 
-        <div class="data"><p style="font-size: 21px;">Confirm Password</p><input type="password" class="inputtab" id="confirmPassword" required="required"></div>
+        <div class="data"><p style="font-size: 21px;">Confirm Password</p><input type="password" class="inputtab" id="confirmPassword" name="confirmPassword" required="required"></div>
 <p id="message"></p>
-        <input type="submit" class="submit" name="subscribe" 
+        <input type="submit" class="submit" name="submit" 
         value="Register" onclick="checkPassword()"/>
     </form>
     </div>
@@ -199,7 +199,17 @@
         <p>riteshsaini1601@gmail.com</p>
     </div>
 </footer>
-
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     
 </body>
 </html>
