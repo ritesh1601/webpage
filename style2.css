@@ -517,3 +517,9 @@ font-size:16px;
 }
 
 }
+@media screen and (max-width:412px) {
+  .main1{
+    width: 1342px;
+  }
+  
+}
