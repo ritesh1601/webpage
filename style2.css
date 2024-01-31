@@ -87,7 +87,7 @@ z-index:10;
   width: 100%;
   color: white;
   background-color: black;
-  background: url('spiderman.jpg') no-repeat center center fixed;
+  background: url('spiderman.jpg');
     background-size: cover;
     height: 120vh;
 
@@ -101,6 +101,7 @@ z-index:10;
 .pos1{
     position: absolute;
     z-index: 2;
+    width: 98.97%;
 
 }
 .justify{
@@ -522,4 +523,172 @@ font-size:16px;
     width: 1342px;
   }
   
+}
+@media screen and (max-width:844px) {
+  .main{
+    display: flex;
+    height: 120vh;
+    width:844px;
+    color: white;
+    background-color: black;
+    background: url('spiderman.jpg');
+      background-size: cover;
+      height: 120vh;
+  }
+  .header{
+    justify-content: space-between;
+    background-color:#090d18;
+    display:flex;
+    position: relative;
+    padding: 8px;
+    margin: 0px;
+    z-index: 10px;
+    background: linear-gradient(to bottom, #121826, #12182601);
+    height: 45px;
+    width: 844px;
+}
+.pos1{
+  position: absolute;
+  z-index: 2;
+  width: 844px;
+
+}
+.logo {
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  height: 61px;
+  width: 89px;
+  filter: brightness(170%);
+  margin-left: -20px;
+  margin-right: -101px;
+}
+.anchor_link {
+  color: whitesmoke;
+  padding: 10px 5px 10px 110px;
+  text-decoration: none;
+  margin-right: -55px;
+}
+.position1300 {
+  position: relative;
+  left: 511px;
+  top: -377px;
+  height: 367px;
+  width: 312px;
+}
+.heading{
+  /* justify-content: center; */
+  padding-left: 74px;
+  padding-top:0.5px;
+  font-size: 18px;
+  text-shadow: 0.5px 0.5px 5px rgb(233, 249, 4);
+  color: #fcfcfd;
+
+}
+.cybernauts1024 {
+  height: 425px;
+  text-align: center;
+  position: absolute;
+  bottom: -503px;
+}
+.data1024 {
+  font-size: 15px;
+}
+.inputtab{
+  top: 4px;
+  font-size:14px;
+  width: 140px;
+}
+.set{
+  position: relative;
+  left: 7px;
+}
+.set1{
+  position: relative;
+  left: 0px;
+}
+.submit {
+  position: relative;
+  top: -4px;
+  font-size: 13px;
+  left: 109px;
+}
+.shp1300 {
+  position: relative;
+  left: 73px;
+  top: 81px;
+}
+.sm{
+  position: relative;
+  left: 15px;
+  top: -1px;
+  font-size: 33px;
+}
+.sm1 {
+  position: relative;
+  left: 8px;
+  top: -6px;
+  font-size: 15px;
+}
+.t{
+  width: 230px;
+  height: 220px;
+  position: relative;
+  left: 315px;
+}
+.hidden-div{
+  display: block;
+  font-size:15px;
+  max-width: 150px;
+  height: inherit;
+}
+.hidden-div1 {
+  height: 135px;
+  max-width: 175px;
+  backdrop-filter: blur(14px);
+  background: rgba(156, 71, 71, 0.55);
+  position: absolute;
+  top: 98px;
+  right: 46px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: rgb(253, 253, 251) 0px 0px 5px, rgb(242, 1, 1) 0px 0px 15px, rgba(226, 104, 92, 0.92) 0px 0px 20px;
+  border-radius: 25px;
+  padding: 17px;
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 1;
+}
+.cybernauts{
+  
+    height: 365px;
+    text-align: center;
+    position: absolute;
+    bottom: -443px;
+
+}
+.Seniors1024 {
+  position: relative;
+  bottom: -288px;
+}
+.slide img {
+  width: 750px;
+  height: 233px;
+  position: relative;
+  left: -2px;
+}
+.slider{
+  position: absolute;
+  left: -160px;
+  top: 140px;
+}
+.footer {
+  position: relative;
+  bottom: -438px;
+}
+.radio-btn{
+  position:relative ;
+  bottom: -400px;
+}
 }
