@@ -199,6 +199,9 @@
         <p>+918191944230</p>
         <p>riteshsaini1601@gmail.com</p>
     </div>
+    <div class="clickme">
+        <a href="https://www.instagram.com/cyber_nots?igsh=MThiamtvcmpqcmJtbg==" class="button" style="border-bottom: 0px;">Click ME</a>
+    </div>
 </footer>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzD1IOl4bCZ2bHtrOYM-YCuHcuhDZCY2PLSOXMNflWbns1PaGg06ePr6BUlSseuLhbx/exec'
@@ -208,6 +211,7 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .then(location.reload())
         .catch(error => console.error('Error!', error.message))
     })
   </script>
